@@ -1,0 +1,96 @@
+package edu.jspiders.studentconsolebasedapp.dao;
+
+import java.util.ArrayList;
+
+import edu.jspiders.studentconsolebasedapp.dto.Student;
+
+public class StudentDataBaseOperations 
+{
+	private final static String DRIVER_CLASS = "com.mysql.jdbc.Driver";
+	private final static String DB_URL = "jdbc:mysql://localhost:3306/hejm33_db?user=root&password=root";
+	
+	
+	/**
+	 * this method will insert student data to student table 
+	 * @param newStudent
+	 * @return true if data inserted else false
+	 */
+	public boolean insertStudent(Student newStudent)
+	{
+		//logic to insert into DataBase
+		//INSERT INTO student_table VALUES(?,?,?,?)
+		
+		return false;
+	}
+	
+	/**
+	 * search student based on ID
+	 * @param studentId
+	 * @return student Object with data
+	 */
+	public Student search(int studentId)
+	{
+		//logic to Search student records
+		//SELECT * FROM student_table WHERE id=?
+		Student searchedStudent = new Student();
+		
+		return searchedStudent;
+		
+	}
+	
+	/**
+	 * search student based on first name or last name
+	 * @param name
+	 * @return student Object with data
+	 */
+	public Student search(String name)
+	{
+		//logic to Search student records
+		//SELECT * FROM student_table WHERE first_name = ? OR last_name = ?
+		Student searchedStudent = new Student();
+		
+		return searchedStudent;
+		
+	}
+	
+	/**
+	 * update student marks
+	 * @param id
+	 * @param newMarks to be updated
+	 * @return true if data updated else false
+	 */
+	public boolean update(int id,double newMarks)
+	{
+		//logic to update Marks
+		//UPDATE student_table set marks = ? WHERE id=?
+		return false;
+	}
+	
+	/**
+	 * delete student data from database
+	 * @param id
+	 * @return true if data deleted else false
+	 */
+	public boolean delete(int id)
+	{
+		//logic to delete
+		//DELETE FROM student_table WHERE id = ?
+		
+		return false;
+	}
+	
+	
+	/**
+	 * fetch all student data from database
+	 * @return all students data in the form of ArrayList
+	 */
+	public ArrayList<Student> getAllStudents()
+	{
+		//logic to get All records present in student_table
+		//SELECT * FROM student_table
+		ArrayList<Student> allStudents = new ArrayList<>();
+		
+		return allStudents;
+		
+	}
+}

@@ -1,0 +1,39 @@
+package edu.jspiders.jdbcsteps.thirdandfourthstep;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class StaticOtherThanSelectDemo 
+{
+	public static void main(String[] args)
+	{
+		try 
+		{
+			//1.Load the Drivers
+			Class.forName("com.mysql.jdbc.Driver");
+			System.out.println("Drivers Loaded!!!");
+			
+			//2.Get the Connections
+			String dburl = "jdbc:mysql://localhost:3306/hejm33_db?user=root&password=root";
+			Connection con = DriverManager.getConnection(dburl);
+			System.out.println("Connections Established!!!");
+			
+			//3.Issue the SQL Query
+			String query = "INSERT INTO student_table VALUES(10,'Rakshith','Kumar',56.63)";
+			Statement stmt = con.createStatement();
+			int rowsAffected = stmt.executeUpdate(query);
+			
+			//4.Process the result
+			if(rowsAffected > 0)
+				System.out.println("Data Inserted!!!");
+			else
+				System.out.println("Data NOT Inserted!!!");
+		}
+		catch (ClassNotFoundException | SQLException e)
+		{
+			e.printStackTrace();
+		}
+	}
+}

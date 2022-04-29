@@ -1,0 +1,9 @@
+package edu.jspiders.jdbcsteps.thirdandfourthstep;
+
+public class StaticSelectDemo 
+{
+	public static void main(String[] args) 
+	{
+		Class.forName("com.mysql.jdbc.Driver");
+	}
+}

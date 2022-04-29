@@ -1,0 +1,19 @@
+package edu.jspiders.filehandelingdemo;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class ReadDataFromFileDemo
+{
+	public static void main(String[] args) throws IOException
+	{
+		File f = new File("E:\\Rakshith\\J2EE\\HEJM33\\FileHandeling\\Test.txt");
+		FileReader reader = new FileReader(f);
+		
+		int data = reader.read();
+		System.out.println(data);
+		
+	}
+}

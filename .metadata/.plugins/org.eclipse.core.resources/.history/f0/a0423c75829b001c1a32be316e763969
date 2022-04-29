@@ -1,0 +1,29 @@
+package edu.jspiders.jdbcsteps.secondstep;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.Properties;
+
+public class SecondStepThirdWay
+{
+	public static void main(String[] args)
+	{
+		try 
+		{
+			//1.Load the Drivers
+			Class.forName("com.mysql.jdbc.Driver");
+			
+			//2.Get the Connection
+			File f = new File("./resources/credentials.properties");
+			FileReader reader = new FileReader(f);
+			
+			Properties info = new Properties();
+			info.load(reader);
+		} 
+		catch (ClassNotFoundException | FileNotFoundException e) 
+		{
+			e.printStackTrace();
+		}
+	}
+}

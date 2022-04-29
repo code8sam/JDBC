@@ -1,0 +1,14 @@
+package edu.jspiders.studentconsolebasedapp.dao;
+
+import edu.jspiders.studentconsolebasedapp.dto.Student;
+
+public class StudentDataBaseOperations 
+{
+	public boolean insertStudent(Student newStudent)
+	{
+		//logic to inseet into DataBase
+		//INSERT INTO student_table VALUES(?,?,?,?)
+		
+		return false;
+	}
+}

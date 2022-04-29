@@ -1,0 +1,11 @@
+package edu.jspiders.filehandelingdemo;
+
+import java.io.File;
+
+public class ReadDataFromFileDemo
+{
+	public static void main(String[] args)
+	{
+		File f = new File("E:\\Rakshith\\J2EE\\HEJM33\\FileHandeling\\Test.txt")
+	}
+}

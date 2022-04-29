@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;StaticSelectDemo.java&apos; to &apos;JDBCSteps/src/edu.jspiders.jdbcsteps.thirdandfourthstep&apos;&#x0D;&#x0A;- Original project: &apos;JDBCSteps&apos;&#x0D;&#x0A;- Destination element: &apos;JDBCSteps/src/edu.jspiders.jdbcsteps.thirdandfourthstep&apos;&#x0D;&#x0A;- Original element: &apos;edu.jspiders.jdbcsteps.thirdandfourthstep.StaticSelectDemo.java&apos;" description="Copy compilation unit" destination="/src&lt;edu.jspiders.jdbcsteps.thirdandfourthstep" element1="/src&lt;edu.jspiders.jdbcsteps.thirdandfourthstep{StaticSelectDemo.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1646720470970" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,29 @@
+package edu.jspiders.studentconsolebasedapp.dao;
+
+import edu.jspiders.studentconsolebasedapp.dto.Student;
+
+public class StudentDataBaseOperations 
+{
+	/**
+	 * this method will insert student data to student table 
+	 * @param newStudent
+	 * @return true if data inserted else false
+	 */
+	public boolean insertStudent(Student newStudent)
+	{
+		//logic to insert into DataBase
+		//INSERT INTO student_table VALUES(?,?,?,?)
+		
+		return false;
+	}
+	
+	public Student search(int studentId)
+	{
+		//logic to Search student records
+		//SELECT * FROM student_table WHERE id=?
+		Student searchedStudent = new Student();
+		
+		return searchedStudent;
+		
+	}
+}

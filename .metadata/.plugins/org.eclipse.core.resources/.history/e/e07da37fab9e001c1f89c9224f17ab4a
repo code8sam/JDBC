@@ -1,0 +1,40 @@
+package edu.jspiders.jdbcsteps.thirdandfourthstep;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public class DispalyStudentBasedOnRanks
+{
+
+	public static void main(String[] args)
+	{
+		System.out.println("FCD Students");
+		System.out.println("___________________________________");
+		getStudnetsBasedOnMarks(70.0,100.0);
+	}
+
+	private static void getStudnetsBasedOnMarks(double lowerRange, double upperRange)
+	{
+		try
+		{
+			Class.forName("com.mysql.jdbc.Driver");
+			
+			String dburl = "jdbc:mysql://localhost:3306/hejm33_db?user=root&password=root";
+			Connection con = DriverManager.getConnection(dburl);
+			
+			String query = "SELECT * FROM student_table where marks between ? and ?";
+			PreparedStatement pstmt = con.prepareStatement(query);
+			pstmt.setDouble(1, lowerRange);
+			ResultSet rs = pstmt.executeQuery();
+		}
+		catch (ClassNotFoundException | SQLException e)
+		{
+			e.printStackTrace();
+		}
+		
+	}
+
+}

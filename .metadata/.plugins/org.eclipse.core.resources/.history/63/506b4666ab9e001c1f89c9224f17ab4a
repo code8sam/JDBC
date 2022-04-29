@@ -1,0 +1,10 @@
+package edu.jspiders.jdbcsteps.thirdandfourthstep;
+
+public class DispalyStudentBasedOnRanks {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

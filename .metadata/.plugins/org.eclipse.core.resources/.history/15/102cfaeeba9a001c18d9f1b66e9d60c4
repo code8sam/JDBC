@@ -1,0 +1,9 @@
+package edu.jspiders.filehandelingdemo;
+
+public class ReadDataFromFileDemo
+{
+	public static void main(String[] args)
+	{
+		
+	}
+}

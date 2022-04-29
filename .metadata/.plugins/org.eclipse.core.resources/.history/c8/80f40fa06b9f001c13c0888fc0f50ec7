@@ -1,0 +1,5 @@
+package edu.jspiders.studentconsolebasedapp.dto;
+
+public class Student {
+
+}

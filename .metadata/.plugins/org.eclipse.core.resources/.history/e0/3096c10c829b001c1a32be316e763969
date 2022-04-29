@@ -1,0 +1,9 @@
+package edu.jspiders.jdbcsteps.secondstep;
+
+public class SecondStepThirdWay
+{
+	public static void main(String[] args)
+	{
+		
+	}
+}

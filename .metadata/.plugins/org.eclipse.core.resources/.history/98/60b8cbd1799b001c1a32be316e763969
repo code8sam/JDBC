@@ -1,0 +1,21 @@
+package edu.jspiders.filehandelingdemo;
+
+import java.io.File;
+
+public class FolderCreationDemo 
+{
+	public static void main(String[] args) 
+	{
+		//File f = new File("E:\\Rakshith\\J2EE\\HEJM33\\abc\\mno\\xyz");
+		
+		File f = new File("./Test");
+		//boolean isCreated = f.mkdir();
+		boolean isCreated = f.mkdirs();
+		if(isCreated)
+			System.out.println("Folder Created!!!!");
+		else
+			System.out.println("Folder Not Created!!!");
+		
+		//System.out.println("This is a \"Java\" Class");
+	}
+}

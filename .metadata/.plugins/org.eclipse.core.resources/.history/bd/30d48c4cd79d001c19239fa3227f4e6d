@@ -1,0 +1,9 @@
+package edu.jspiders.jdbcsteps.thirdandfourthstep;
+
+public class StaticOtherThanSelectDemo 
+{
+	public static void main(String[] args)
+	{
+		
+	}
+}
